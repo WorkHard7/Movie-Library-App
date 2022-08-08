@@ -6,7 +6,7 @@ import Footer from "../FirstPage/Home/Footer";
 import VideoSection from "./VideoSection";
 import RecommendMovies from "./RecommendMovies";
 
-const SecondPage = (props) => {
+const MovieDetails = (props) => {
   const [movie, setMovie] = useState([]);
   let { movieId } = useParams();
 
@@ -20,7 +20,7 @@ const SecondPage = (props) => {
         console.log(data);
         setMovie(data);
       });
-  }, [movieId]);
+  }, [movieId]); // when movieId changes
 
   return (
     <>
@@ -39,4 +39,4 @@ const SecondPage = (props) => {
   );
 };
 
-export default SecondPage;
+export default MovieDetails;

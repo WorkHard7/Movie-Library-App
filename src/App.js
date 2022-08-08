@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SecondPage from "./components/page2/SecondPage";
+import MovieDetails from "./components/page2/MovieDetails";
 import Home from "./components/FirstPage/Home";
 import TopRated from "./components/page2/TopRated";
 import TVShows from "./components/page2/TvShows.js";
@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/movie/:movieId" element={<SecondPage />} />
+        <Route path="/movie/:movieId" element={<MovieDetails />} />
         <Route path="/topRatedMovies" element={<TopRated />} />
         <Route path="/tvShows" element={<TVShows />} />
       </Routes>
